@@ -1,279 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - FundzExpert</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #fff;
-            margin: 0;
-            padding: 0;
-            color: #222;
-        }
-        .header {
-            background: #fff;
-            box-shadow: none;
-            padding: 0;
-            margin: 0;
-        }
-        .header-logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-top: 20px;
-        }
-        .header-logo img {
-            height: 110px;
-        }
-        nav.main-nav {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 0 60px 0 0;
-            margin-top: -60px;
-        }
-        nav.main-nav a {
-            margin: 0 18px;
-            color: #444;
-            text-decoration: none;
-            font-size: 1.05rem;
-            transition: color 0.2s;
-        }
-        nav.main-nav a:hover {
-            color: #1877f2;
-        }
-        .hero-section {
-            background: #666;
-            margin-top: 0;
-            padding: 90px 0 70px 0;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-        }
-        .hero-section h1 {
-            color: #fff;
-            font-size: 3rem;
-            font-weight: 400;
-            margin-bottom: 18px;
-        }
-        .hero-section .subtitle {
-            color: #eaeaea;
-            font-size: 1.3rem;
-            margin-bottom: 32px;
-        }
-        .hero-section .cta-btn {
-            background: #1877f2;
-            color: #fff;
-            padding: 12px 32px;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            text-decoration: none;
-            font-weight: 500;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: background 0.2s;
-            display: inline-block;
-        }
-        .hero-section .cta-btn:hover {
-            background: #145dc1;
-        }
-        .why-section {
-            text-align: center;
-            margin-top: 40px;
-        }
-        .why-title {
-            font-size: 2rem;
-            margin-bottom: 40px;
-            font-weight: 500;
-        }
-        .why-cards {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            margin-bottom: 50px;
-            flex-wrap: wrap;
-        }
-        .why-card {
-            background: #fff;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-            border-radius: 8px;
-            width: 260px;
-            padding: 32px 20px 24px 20px;
-            position: relative;
-            text-align: left;
-            transition: box-shadow 0.2s;
-        }
-        .why-card:hover {
-            box-shadow: 0 8px 24px rgba(0,0,0,0.13);
-        }
-        .why-card .circle {
-            position: absolute;
-            top: -28px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #fff;
-            border: 2px solid #3b8beb;
-            color: #3b8beb;
-            border-radius: 50%;
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            font-weight: 500;
-        }
-        .why-card h3 {
-            margin-top: 32px;
-            margin-bottom: 12px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #222;
-        }
-        .why-card p {
-            font-size: 0.97rem;
-            color: #555;
-            margin: 0;
-        }
-        .about-section {
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-            padding: 0 20px;
-        }
-        .about-section h2 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-top: 40px;
-            margin-bottom: 18px;
-            color: #222;
-        }
-        .about-section p {
-            font-size: 1rem;
-            color: #444;
-            margin-bottom: 12px;
-            line-height: 1.7;
-        }
-        .about-section strong {
-            color: #222;
-        }
-        .footer-section {
-            background: #f7f8fa;
-            padding: 40px 0 0 0;
-        }
-        .footer-contact {
-            max-width: 1100px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .footer-contact .footer-info {
-            font-size: 1.08rem;
-            margin-bottom: 10px;
-        }
-        .footer-contact .footer-info a {
-            color: #1877f2;
-            text-decoration: underline;
-        }
-        .footer-hr {
-            margin: 32px auto 18px auto;
-            max-width: 80%;
-            border: 0;
-            border-top: 1px solid #ccc;
-        }
-        .footer-disclaimer {
-            max-width: 1100px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 0.98rem;
-            color: #555;
-        }
-        .footer-copyright {
-            text-align: center;
-            color: #888;
-            font-size: 1rem;
-            margin: 30px 0 0 0;
-        }
-        @media (max-width: 900px) {
-            .why-cards {
-                flex-direction: column;
-                align-items: center;
-            }
-            .footer-content {
-                flex-direction: column;
-                gap: 18px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Akul Finserv</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581090700227-1e8e8f13dd9a') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    .navbar-brand img {
+      height: 120px;
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <div class="header-logo">
-            <img src="logo-afpl-1.png" alt="Akul Finserv Logo">
-        </div>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="calculator.html">Calculator</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+
+  <!-- Navbar (Header) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo-afpl-1.png" alt="Akul Finserv Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="hero-section">
-        <h1>Grow Your Wealth with Akul Finserv</h1>
-        <div class="subtitle">Smart Mutual Fund Advisory &amp; SIP Planning with Akul Finserv</div>
-        <a href="calculator.html" class="cta-btn">Try Calculator</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4">About Us</h1>
+      <p class="lead">Learn more about Akul Finserv and our mission to help you grow your wealth.</p>
     </div>
-    <div class="why-section">
-        <div class="why-title">Why us ?</div>
-        <div class="why-cards">
-            <div class="why-card">
-                <div class="circle">1</div>
-                <h3>Fund selection:</h3>
-                <p>Selecting right fund can be most challenging part of your entire investment process as it requires lots of time and expertise</p>
-            </div>
-            <div class="why-card">
-                <div class="circle">2</div>
-                <h3>Portfolio Rebalancing:</h3>
-                <p>We suggest yearly portfolio re-balancing to our investors to restore original asset allocation and all this is done with the help of few clicks.</p>
-            </div>
-            <div class="why-card">
-                <div class="circle">3</div>
-                <h3>Simplified customer support</h3>
-                <p>Our expert and dedicated customer care executives are available to solve all your investment related queries across all mutual fund schemes.</p>
-            </div>
-            <div class="why-card">
-                <div class="circle">4</div>
-                <h3>Portfolio Review</h3>
-                <p>We review your portfolio regularly and suggest changes if required</p>
-            </div>
-        </div>
+  </section>
+
+  <!-- About Content Section -->
+  <section class="container py-5">
+    <h2>Who We Are?</h2>
+    <p5>Akul Finserv Private Limited is an AMFI (Association of Mutual Funds in India) registered mutual fund distributor. Our AMFI registration no. is ARN-285115.</p5>
+    <p>Promoter Mr. Rakesh Kumar Pandey has an experience of more than 15 years as a financial advisor in mutual fund industry. With his expertise and experience we are able to hand-pick schemes poised to become future winners.</p>
+    <h2>What We Offer?</h2>
+    <p><strong>Goal Based Approach:</strong> At Akul Finserv we believe in and promote goal based investing. Investors should invest for various life goals like provision for children marriage, child education, and retirement etc. Investing without goal is like racing without a finish line, it leads you nowhere.</p>
+    <p><strong>SIP:</strong> We recommend sip as an important tool for long term wealth creation as it takes away the emotional distractions e.g. greed and fear (buying high and selling low) from investors control as they are the biggest enemies of an investor. Investors are benefitted by rupee cost averaging (buying more units when markets are low) when they invest through sip mode.</p>
+    <p><strong>Performance:</strong> We have a long track record of wealth creation for our investors. More than 200 investors are putting faith on Akul Finserv and we are proud to have served them for their mutual fund needs.</p>
+    <p>We review your portfolio periodically and recommend changes to keep your portfolio on track and help achieve your financial goals in time bound manner.</p>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer text-center">
+    <div class="container">
+      <p><strong>Address:</strong> Akul Finserv Private Limited, FK-8, First Floor, Somdutt Chamber -1, Bhikaji Cama Place, New Delhi - 110066</p>
+      <p><strong>Phone:</strong> +91-9350522787 (Rakesh Pandey)</p>
+      <p><strong>Email:</strong> <a href="mailto:akulfinserv@gmail.com">akulfinserv@gmail.com</a></p>
+      <hr />
+      <small class="text-muted d-block mt-3" style="font-size: 13px;">
+        Mutual fund investments are subject to market risks. Please read the scheme information and other related documents carefully before investing.
+        Past performance is not indicative of future returns. Please consider your specific investment requirements before choosing a fund, or designing a portfolio that suits your needs.
+      </small>
+      <small class="text-muted d-block mt-2" style="font-size: 13px;">
+        Akul Finserv Private Limited (ARN-285115) makes no warranties or representations, express or implied, on products offered through the platform. It accepts no liability for any damages or losses, however caused,
+        in connection with the use of, or on the reliance of its product or related services. Terms and conditions of the website are applicable.
+      </small>
+      <p class="mt-3">&copy; 2025 Akul Finserv Private Limited. All rights reserved.</p>
     </div>
-    <div class="about-section">
-        <h2>Who We Are?</h2>
-        <p>Fundscart.com is a technology based mutual fund investing platform. Here you can invest in any mutual fund scheme with a single login. You can track your entire portfolio with same login. You can also track and transact for your family members with same login account.</p>
-        <p>Fundscart.com is a trademark of Future Wealth Advisors Private Limited. We are an AMFI (Association of Mutual Funds in India) registered mutual fund distributor. Our AMFI registration no. is ARN-114820.</p>
-        <p>Promoter Mr. Raj Kumar Pandey has an experience of almost 15 years as a financial advisor in mutual fund industry. With his expertise and experience we are able to hand-pick schemes poised to become future winners.</p>
-        <h2>What We Offer?</h2>
-        <p><strong>Goal Based Approach:</strong> At Fundscart we believe in and promote goal based investing. Investors should invest for various life goals like provision for children marriage, child education, and retirement etc. Investing without goal is like racing without a finish line, it leads you nowhere.</p>
-        <p><strong>SIP:</strong> We recommend sip as an important tool for long term wealth creation as it takes away the emotional distractions e.g. greed and fear (buying high and selling low) from investors control as they are the biggest enemies of an investor. Investors are benefitted by rupee cost averaging (buying more units when markets are low) when they invest through sip mode.</p>
-        <p><strong>Performance:</strong> We have a long track record of wealth creation for our investors. More than 2000 investors are putting faith on Fundscart for their mutual fund needs.</p>
-        <p>We review your portfolio periodically and recommend changes to keep your portfolio on track and help achieve your financial goals in time bound manner.</p>
-    </div>
-    <div class="footer-section">
-        <div class="footer-contact">
-            <div class="footer-info"><b>Address:</b> Akul Finserv Private Limited, FK-8, First Floor, Somdutt Chamber -1, Bhikaji Cama Place, New Delhi - 110066</div>
-            <div class="footer-info"><b>Phone:</b> +91-9350522787 (Rakesh Pandey)</div>
-            <div class="footer-info"><b>Email:</b> <a href="mailto:akulfinserv@gmail.com">akulfinserv@gmail.com</a></div>
-        </div>
-        <hr class="footer-hr">
-        <div class="footer-disclaimer">
-            Mutual fund investments are subject to market risks. Please read the scheme information and other related documents carefully before investing. Past performance is not indicative of future returns. Please consider your specific investment requirements before choosing a fund, or designing a portfolio that suits your needs.<br><br>
-            Akul Finserv Private Limited (ARN-285115) makes no warranties or representations, express or implied, on products offered through the platform. It accepts no liability for any damages or losses, however caused, in connection with the use of, or the reliance of its product or related services. Terms and conditions of the website are applicable.
-        </div>
-        <div class="footer-copyright">
-            © 2025 Akul Finserv Private Limited. All rights reserved.
-        </div>
-    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
